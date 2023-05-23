@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "CLOUDANT_URL": {
+        "searchPatterns": [
+            "env:CLOUDANT_URL",
+            "file:/server/localdev-config.json:$.CLOUDANT_URL"
+        ]
+    },
+    "CLOUDANT_APIKEY": {
+        "searchPatterns": [
+            "env:CLOUDANT_APIKEY",
+            "file:/server/localdev-config.json:$.CLOUDANT_APIKEY"
+        ]
+    },
+    "STORAGE_DBNAME": {
+        "searchPatterns": [
+            "env:STORAGE_DBNAME",
+            "file:/server/localdev-config.json:$.STORAGE_DBNAME"
+        ]
+    }
+
+}

@@ -1,0 +1,15 @@
+[
+
+{"method": "GET",    "path": "/app/iitservices", "accessroles": ["app_editor", "app_viewer" ]},
+{"method": "GET",    "path": "/app/settingslist/:servicename", "accessroles": ["app_editor", "app_viewer" ]},
+{"method": "POST",   "path": "/app/settingslist/:servicename", "accessroles": ["app_editor"]},
+{"method": "GET",    "path": "/app/certs/:servicename", "accessroles": ["app_editor", "app_viewer" ]},
+{"method": "DELETE", "path": "/app/certs/:servicename", "accessroles": ["app_editor"]},
+{"method": "POST",   "path": "/app/certs/:servicename", "accessroles": ["app_editor"]},
+{"method": "GET",    "path": "/app/test", "accessroles": ["app_editor", "app_viewer" ]}
+
+]
+
+
+
+
