@@ -14,12 +14,13 @@ COPY . /tmp/src
 ##RUN echo "mv /usr/appsrc/nodesrvcbe/* /tmp/src " > /opt/app-root/etc/xmove.sh
 ##RUN chmod 777 /opt/app-root/etc/xmove.sh
 
-RUN echo "---> Installing application source ..."
-RUN /opt/app-root/etc/xmove.sh 
+#RUN echo "---> Installing application source ..."
+#RUN /opt/app-root/etc/xmove.sh 
 
 # contextDir: /nodesrvcbe
 #COPY /opt/app-root/src /tmp/src
 # RUN chown -R 1001:0 /tmp/src
+
 RUN /usr/bin/fix-permissions /tmp/src
 USER 1001
 
