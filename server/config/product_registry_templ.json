@@ -1,0 +1,15 @@
+﻿{
+  "_id": "product-registry",
+  "title": "Реєстр товарів",
+  "registrylist": [
+    {
+      "product_id": "Laptop1",
+      "product_title": "Laptop tnonkpad"
+    },
+    {
+      "product_id": "TeaCup",
+      "product_title": "Tea cup with picure"
+    }
+
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "pvx-iit-srvc-registry",
+  "version": "1.0.0",
+  "description": "iit service registry",
+  "scripts": {
+    "start": "node server/server.js",
+    "debug": "node --inspect=0.0.0.0:5858 server/server.js",
+    "debug:brk": "node --inspect-brk=0.0.0.0:5858 server/server.js",
+    "debug:legacy": "node --debug=0.0.0.0:5858 server/server.js",
+    "test": "nyc mocha --exit",
+    "dev": "nodemon server/server.js",
+    "xdev": "node --inspect-brk=0.0.0.0:5858 ./node_modules/mocha/bin/_mocha --timeout 999999 --colors ${T_FILE}"
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_HEAPDUMP_OPTIONS": "nosignal"
+    }
+  },
+  "dependencies": {
+    "@ibm-cloud/cloudant": "^0.5.1",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "form-data": "^4.0.0",
+    "fs": "0.0.1-security",
+    "ibm-cloud-env": "^0.3.6",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^9.0.0",
+    "maskdata": "^1.2.0",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "multiparty": "^4.2.3",
+    "process": "^0.11.10",
+    "pug": "^3.0.2",
+    "query-string": "^8.1.0",
+    "sleep": "^6.3.0",
+    "supertest": "^6.3.3",
+    "url-pattern": "^1.0.3",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "http://int-ifc-mb10-as.pravex.ua/ZZ000C/pvx-iit-srvc-registry.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
